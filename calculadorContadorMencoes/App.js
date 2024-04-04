@@ -56,9 +56,8 @@ const GradeCalculator = () => {
   };
 
   useEffect(() => {
-    calculateAverage(); // Chamando a função de cálculo da média automaticamente quando as notas são alteradas
-  }, [grades]); // Executando o efeito sempre que houver uma mudança nas notas
-
+    calculateAverage(); 
+  }, [grades]); 
   const materias = ["P. Web", "P. Mob", "TCC", "QTS", "Sis E"];
 
   return (
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
   materiaText: {
     marginBottom: 5,
     fontWeight: 'bold',
-    width: 50, // Correção de um erro de digitação no código original
+    width: 50, 
     marginLeft: 10,
     marginTop: -10,
   },
